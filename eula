@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Nutzungsbedingungen</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 32px;
+      line-height: 1.6;
+      max-width: 800px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Nutzungsbedingungen (EULA)</h1>
+
+<p>Diese App („CreateProjectFolder“) wird dir kostenlos bereitgestellt. Mit der Nutzung der App stimmst du den folgenden Bedingungen zu.</p>
+
+<h2>Funktionsumfang</h2>
+<p>Die App dient der Erstellung und Verwaltung strukturierter Projektordner auf dem internen Speicher, einer SD-Karte oder über Netzwerkfreigaben (SMB). Die App speichert Zugangsdaten nur lokal auf dem Gerät und greift nicht auf externe Server zu.</p>
+
+<h2>Haftungsausschluss</h2>
+<p>Die App wird ohne jegliche Gewährleistung bereitgestellt. Es wird keine Garantie für die Funktion, Genauigkeit oder Verfügbarkeit übernommen. Der Entwickler haftet nicht für Datenverlust, Schäden oder Fehlfunktionen, die durch die Nutzung dieser App entstehen.</p>
+
+<h2>Datenverarbeitung</h2>
+<p>Die App speichert lokale Verbindungsdaten (z. B. IP-Adresse, Benutzername, Passwort) ausschließlich auf dem Gerät. Eine Übertragung oder Verarbeitung durch Dritte erfolgt nicht. Weitere Informationen findest du in der <a href="https://sabware-app.github.io/createprojectfolder-site/datenschutz.html">Datenschutzerklärung</a>.</p>
+
+<h2>Nutzungsbedingungen</h2>
+<ul>
+  <li>Du nutzt die App auf eigene Verantwortung.</li>
+  <li>Du darfst die App nicht für rechtswidrige Zwecke verwenden.</li>
+  <li>Der Quellcode und die Rechte bleiben beim Entwickler.</li>
+</ul>
+
+<h2>Kontakt</h2>
+<p>Lisa Schmid<br>
+E-Mail: createprojectfolder.app@gmail.com</p>
+
+<p>Stand: Juni 2025</p>
+
+</body>
+</html>
