@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>📂 Create Project Folder – Kurzanleitung</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #333;
+            background: #fff;
+        }
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 0.4em;
+        }
+        h2 {
+            margin-top: 2em;
+            font-size: 1.4em;
+            border-bottom: 2px solid #3366cc;
+            padding-bottom: 4px;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        ol {
+            margin-left: 1.2em;
+            padding-left: 0.5em;
+        }
+        li {
+            margin-bottom: 0.7em;
+        }
+        .icon {
+            font-size: 1.2em;
+        }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+<h1>📂 Create Project Folder – Kurzanleitung</h1>
+
+<p>
+    <strong>Create Project Folder</strong> richtet sich an Nutzer:innen, die regelmäßig strukturierte Ordner für neue Projekte anlegen – 
+z. B. in der Schule, im Studium, bei der Büroarbeit oder für private Dokumentationen. Die App erstellt auf Knopfdruck eine komplette Ordnerstruktur 
+(z. B. <em>Audio, Bilder, PDF, Textfiles, Videos</em> etc.) an einem beliebigen Speicherort.
+</p>
+
+<p>
+    Im Gegensatz zu herkömmlichen Dateimanagern geht es nicht darum, Dateien einzeln zu verwalten, sondern wiederkehrende Projektstrukturen schnell und zuverlässig zu erzeugen – 
+sowohl auf dem internen Speicher, der SD-Karte als auch im Netzwerk (SMB-Freigaben).
+</p>
+
+<p>
+    Die App ist leichtgewichtig, ohne Werbung und benötigt keine Cloud-Verbindung. 
+Sie respektiert deine Datenhoheit und speichert keine Inhalte außerhalb deiner Geräte.
+</p>
+
+<h2>🛠 Anleitung – so geht’s</h2>
+
+<ol>
+    <li>
+        <strong>App starten</strong><br>
+        Du gelangst auf eine Startseite mit zwei Bereichen: <em>Lokaler Speicher / SD-Karte</em> und <em>Netzwerkzugänge</em>.
+    </li>
+    <li>
+        <strong>Projektordner anlegen</strong><br>
+        Wähle <em>Lokaler Speicher / SD-Karte</em>. Navigiere zum gewünschten Zielordner. Tippe auf das ➕ Symbol (Projektordner erstellen). Gib einen Namen ein – fertig!
+    </li>
+    <li>
+        <strong>Netzwerkverbindung hinzufügen (optional)</strong><br>
+        Gehe zu <em>Netzwerkzugänge</em>, tippe auf das ➕ Symbol. Gib <em>Host</em>, <em>Freigabe</em> (optional), <em>Benutzername</em> und <em>Passwort</em> ein. Die Verbindung wird gespeichert.
+    </li>
+    <li>
+        <strong>Netzwerkordner durchsuchen</strong><br>
+        Tippe auf eine gespeicherte Verbindung. Die App verbindet sich mit dem Server und zeigt die Ordnerstruktur. Du kannst dort wie gewohnt Projektordner erstellen, Ordner umbenennen oder löschen.
+    </li>
+    <li>
+        <strong>Bestehende Verbindungen verwalten</strong><br>
+        Halte eine Verbindung gedrückt, um sie umzubenennen oder zu löschen.
+    </li>
+    <li>
+        <strong>Impressum, Datenschutz und Nutzungsbedingungen</strong><br>
+        Diese findest du über das <strong><span class="material-symbols-outlined" style="font-size: 20px; vertical-align: middle;">
+    info
+</span></strong>-Symbol in der oberen App-Leiste.
+    </li>
+</ol>
+
+</body>
+</html>
