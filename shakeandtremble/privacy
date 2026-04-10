@@ -1,1 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datenschutzerklärung – Shake and Tremble</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f7f3ee;
+      color: #1f1f1f;
+    }
 
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    h1, h2 {
+      color: #2b211c;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin-top: 32px;
+      font-size: 1.25rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      margin-top: 20px;
+    }
+
+    a {
+      color: #5c3d2e;
+    }
+
+    .muted {
+      color: #6b625d;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.95rem;
+      color: #6b625d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Datenschutzerklärung</h1>
+    <p class="muted">für die Android-App „Shake and Tremble“</p>
+
+    <div class="card">
+      <h2>1. Verantwortliche Stelle</h2>
+      <p>
+        [Vorname Nachname]<br />
+        [Straße und Hausnummer]<br />
+        [PLZ Ort]<br />
+        [Land]<br />
+        E-Mail: [deine E-Mail-Adresse]
+      </p>
+
+      <h2>2. Allgemeines zur Datenverarbeitung</h2>
+      <p>
+        Der Schutz Ihrer personenbezogenen Daten ist mir ein wichtiges Anliegen.
+        Die App „Shake and Tremble“ kann grundsätzlich genutzt werden, ohne dass
+        Sie ein Benutzerkonto anlegen oder personenbezogene Daten aktiv eingeben müssen.
+      </p>
+      <p>
+        Personenbezogene Daten werden nur insoweit verarbeitet, wie dies technisch
+        erforderlich ist, um die App bereitzustellen oder wenn gesetzliche Vorschriften dies erlauben.
+      </p>
+
+      <h2>3. Welche Daten die App verarbeitet</h2>
+      <p>
+        Die App selbst erhebt und speichert grundsätzlich keine personenbezogenen Daten
+        wie Name, Adresse, Telefonnummer oder E-Mail-Adresse innerhalb der App.
+      </p>
+      <p>
+        Beim Abspielen oder Öffnen von Inhalten können jedoch technisch erforderliche Verbindungen
+        zu externen Diensten oder Webseiten hergestellt werden. Dabei können durch den jeweiligen
+        Anbieter technisch notwendige Daten verarbeitet werden, zum Beispiel:
+      </p>
+      <ul>
+        <li>IP-Adresse</li>
+        <li>Datum und Uhrzeit des Zugriffs</li>
+        <li>technische Informationen zum verwendeten Gerät oder Browser</li>
+        <li>aufgerufene Inhalte oder Dateien</li>
+      </ul>
+
+      <h2>4. Externe Inhalte und Links</h2>
+      <p>
+        Die App enthält Video-, Audio- und Textinhalte, die ganz oder teilweise über externe Quellen
+        bzw. externe Links bereitgestellt werden können. Wenn Sie solche Inhalte öffnen oder abspielen,
+        wird eine Verbindung zu den jeweiligen externen Servern hergestellt.
+      </p>
+      <p>
+        Dabei können Daten durch den jeweiligen Drittanbieter verarbeitet werden. Auf diese Datenverarbeitung
+        habe ich keinen vollständigen Einfluss. Es gelten insoweit die Datenschutzbestimmungen des jeweiligen Anbieters.
+      </p>
+
+      <h2>5. Keine Registrierung, keine Nutzerkonten</h2>
+      <p>
+        Für die Nutzung der App ist keine Registrierung erforderlich. Es werden keine Benutzerkonten eingerichtet
+        und keine Login-Daten innerhalb der App verarbeitet.
+      </p>
+
+      <h2>6. Keine Analyse- oder Werbetools</h2>
+      <p>
+        In der App werden derzeit keine eigenen Analyse-, Tracking- oder Werbetools eingesetzt.
+      </p>
+
+      <h2>7. GitHub Pages</h2>
+      <p>
+        Diese Datenschutzerklärung wird über GitHub Pages bereitgestellt. Beim Aufruf dieser Seite
+        kann es zu einer Verarbeitung technischer Zugriffsdaten durch GitHub kommen.
+        Weitere Informationen finden Sie in den Datenschutzinformationen von GitHub.
+      </p>
+
+      <h2>8. Rechtsgrundlage</h2>
+      <p>
+        Soweit personenbezogene Daten verarbeitet werden, erfolgt dies auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
+        (berechtigtes Interesse an der technischen Bereitstellung der App und ihrer Inhalte)
+        oder, soweit erforderlich, auf Grundlage anderer einschlägiger gesetzlicher Erlaubnistatbestände.
+      </p>
+
+      <h2>9. Ihre Rechte</h2>
+      <p>Sie haben nach der DSGVO insbesondere folgende Rechte:</p>
+      <ul>
+        <li>Recht auf Auskunft über die verarbeiteten personenbezogenen Daten</li>
+        <li>Recht auf Berichtigung unrichtiger Daten</li>
+        <li>Recht auf Löschung</li>
+        <li>Recht auf Einschränkung der Verarbeitung</li>
+        <li>Recht auf Widerspruch gegen die Verarbeitung</li>
+        <li>Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde</li>
+      </ul>
+
+      <h2>10. Kontakt</h2>
+      <p>
+        Wenn Sie Fragen zum Datenschutz im Zusammenhang mit dieser App haben,
+        können Sie sich an die oben angegebene verantwortliche Stelle wenden.
+      </p>
+
+      <h2>11. Änderungen dieser Datenschutzerklärung</h2>
+      <p>
+        Ich behalte mir vor, diese Datenschutzerklärung anzupassen, wenn sich die App,
+        gesetzliche Anforderungen oder die Art der Datenverarbeitung ändern.
+      </p>
+    </div>
+
+    <footer>
+      Stand: April 2026
+    </footer>
+  </div>
+</body>
+</html>
