@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EULA – Shake and Tremble</title>
 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f3ee;
+      color: #1f1f1f;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    h1, h2 {
+      color: #2b211c;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 32px;
+      font-size: 1.25rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      margin-top: 20px;
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .muted {
+      color: #6b625d;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.95rem;
+      color: #6b625d;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Endbenutzer-Lizenzvereinbarung (EULA)</h1>
+    <p class="muted">für die Android-App „Shake and Tremble“</p>
+
+    <div class="card">
+
+      <h2>1. Geltungsbereich</h2>
+      <p>
+        Diese Endbenutzer-Lizenzvereinbarung (EULA) regelt die Nutzung der mobilen Anwendung
+        „Shake and Tremble“ (nachfolgend „App“) durch den Nutzer.
+      </p>
+
+      <h2>2. Lizenz</h2>
+      <p>
+        Dem Nutzer wird eine einfache, nicht übertragbare und nicht ausschließliche Lizenz zur Nutzung
+        der App im Rahmen dieser Vereinbarung gewährt.
+      </p>
+
+      <h2>3. Nutzung der Inhalte</h2>
+      <p>
+        Die App stellt Video-, Audio- und Textinhalte zur Verfügung. Diese Inhalte dienen ausschließlich
+        zu Informations- und Inspirationszwecken.
+      </p>
+      <p>
+        Eine weitergehende Nutzung, insbesondere Vervielfältigung, Verbreitung oder öffentliche Wiedergabe
+        der Inhalte, ist nur im Rahmen der jeweils geltenden Rechte zulässig.
+      </p>
+
+      <h2>4. Externe Inhalte</h2>
+      <p>
+        Teile der Inhalte können über externe Quellen oder Links bereitgestellt werden.
+        Für diese externen Inhalte sind die jeweiligen Anbieter verantwortlich.
+      </p>
+      <p>
+        Es wird keine Gewähr für die Verfügbarkeit, Richtigkeit oder Rechtmäßigkeit externer Inhalte übernommen.
+      </p>
+
+      <h2>5. Haftung</h2>
+      <p>
+        Die Nutzung der App erfolgt auf eigene Verantwortung.
+      </p>
+      <p>
+        Es wird keine Haftung für Schäden übernommen, die aus der Nutzung oder Nichtverfügbarkeit der App
+        oder ihrer Inhalte entstehen, soweit gesetzlich zulässig.
+      </p>
+
+      <h2>6. Änderungen und Verfügbarkeit</h2>
+      <p>
+        Der Anbieter behält sich vor, Inhalte und Funktionen der App jederzeit zu ändern,
+        einzuschränken oder einzustellen.
+      </p>
+
+      <h2>7. Keine Gewährleistung</h2>
+      <p>
+        Die App wird „wie gesehen“ bereitgestellt.
+        Es wird keine Garantie für eine jederzeitige Verfügbarkeit oder Fehlerfreiheit übernommen.
+      </p>
+
+      <h2>8. Datenschutz</h2>
+      <p>
+        Informationen zur Verarbeitung personenbezogener Daten sind in der separaten Datenschutzerklärung beschrieben.
+      </p>
+
+      <h2>9. Schlussbestimmungen</h2>
+      <p>
+        Es gilt das Recht des Landes, in dem der Anbieter seinen Sitz hat,
+        soweit gesetzlich zulässig.
+      </p>
+
+      <p>
+        Sollten einzelne Bestimmungen dieser Vereinbarung unwirksam sein,
+        bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.
+      </p>
+
+    </div>
+
+    <footer>
+      Stand: April 2026
+    </footer>
+  </div>
+</body>
+</html>
