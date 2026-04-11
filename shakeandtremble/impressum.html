@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Impressum</title>
+  <title>Imprint – Shake and Tremble</title>
 
   <style>
     body {
@@ -54,6 +54,10 @@
       font-size: 0.95rem;
       color: #6b625d;
     }
+
+    .lang-en {
+      display: none;
+    }
   </style>
 </head>
 
@@ -61,38 +65,89 @@
 
   <div class="container">
 
-    <h1>Impressum</h1>
+    <!-- DE -->
+    <div class="lang-de">
+      <h1>Impressum</h1>
 
-    <div class="card">
+      <div class="card">
 
-      <p>Angaben gemäß § 5 TMG:</p>
+        <p>Angaben gemäß § 5 TMG:</p>
 
-      <p>
-        SabWare<br>
-        Sabine Buttgereit<br>
-        c/o flexdienst - #10919<br>
-        Kurt-Schumacher-Straße 76<br>
-        67663 Kaiserslautern<br>
-        Deutschland
-      </p>
+        <p>
+          SabWare<br>
+          Sabine Buttgereit<br>
+          c/o flexdienst - #10919<br>
+          Kurt-Schumacher-Straße 76<br>
+          67663 Kaiserslautern<br>
+          Deutschland
+        </p>
 
-      <p>
-        Kontakt-E-Mail: <a href="mailto:createprojectfolder.app@gmail.com">createprojectfolder.app@gmail.com</a>
-      </p>
+        <p>
+          Kontakt-E-Mail: <a href="mailto:createprojectfolder.app@gmail.com">createprojectfolder.app@gmail.com</a>
+        </p>
 
-      <h2>Haftung für Inhalte</h2>
-      <p>Die Inhalte dieser App wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.</p>
+        <h2>Haftung für Inhalte</h2>
+        <p>Die Inhalte dieser App wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.</p>
 
-      <h2>Haftung für Links</h2>
-      <p>Die App enthält Links zu externen Webseiten Dritter, auf deren Inhalte kein Einfluss besteht. Deshalb kann für diese fremden Inhalte auch keine Gewähr übernommen werden.</p>
+        <h2>Haftung für Links</h2>
+        <p>Die App enthält Links zu externen Webseiten Dritter, auf deren Inhalte kein Einfluss besteht. Deshalb kann für diese fremden Inhalte auch keine Gewähr übernommen werden.</p>
 
-      <footer>
-        <p>Stand: April 2026</p>
-      </footer>
+        <footer>
+          <p>Stand: April 2026</p>
+        </footer>
 
+      </div>
+    </div>
+
+    <!-- EN -->
+    <div class="lang-en">
+      <h1>Imprint</h1>
+
+      <div class="card">
+
+        <p>Information according to § 5 TMG (German Telemedia Act):</p>
+
+        <p>
+          SabWare<br>
+          Sabine Buttgereit<br>
+          c/o flexdienst - #10919<br>
+          Kurt-Schumacher-Straße 76<br>
+          67663 Kaiserslautern<br>
+          Germany
+        </p>
+
+        <p>
+          Contact e-mail: <a href="mailto:createprojectfolder.app@gmail.com">createprojectfolder.app@gmail.com</a>
+        </p>
+
+        <h2>Liability for content</h2>
+        <p>The contents of this app have been created with great care. However, no guarantee can be given for the accuracy, completeness, and timeliness of the content.</p>
+
+        <h2>Liability for links</h2>
+        <p>This app contains links to external third-party websites over whose content there is no control. Therefore, no liability can be assumed for these external contents.</p>
+
+        <footer>
+          <p>As of: April 2026</p>
+        </footer>
+
+      </div>
     </div>
 
   </div>
+
+  <script>
+    const lang = (navigator.language || navigator.userLanguage || "").toLowerCase();
+
+    if (lang.startsWith("de")) {
+      document.querySelectorAll(".lang-en").forEach(el => el.style.display = "none");
+      document.querySelectorAll(".lang-de").forEach(el => el.style.display = "block");
+      document.documentElement.lang = "de";
+    } else {
+      document.querySelectorAll(".lang-de").forEach(el => el.style.display = "none");
+      document.querySelectorAll(".lang-en").forEach(el => el.style.display = "block");
+      document.documentElement.lang = "en";
+    }
+  </script>
 
 </body>
 </html>
