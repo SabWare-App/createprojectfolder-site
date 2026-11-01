@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Legal Notice | Stop trying to be special</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #fff9f3;
+      --surface: #ffffff;
+      --text: #263b40;
+      --muted: #4b6065;
+      --accent: #a51e32;
+      --outline: #dfd6ce;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #102a30;
+        --surface: #19383f;
+        --text: #f4f7f6;
+        --muted: #c5d5d6;
+        --accent: #ffb5bd;
+        --outline: #476269;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: clamp(20px, 5vw, 44px);
+      background: var(--surface);
+      border: 1px solid var(--outline);
+      border-radius: 24px;
+      overflow-wrap: anywhere;
+    }
+    .app-name { margin: 0; color: var(--muted); }
+    h1 { margin: 8px 0 24px; font-size: 2rem; line-height: 1.2; }
+    h2 { margin-top: 28px; font-size: 1.2rem; line-height: 1.4; }
+    address { font-style: normal; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .application-id { font-family: monospace; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="app-name">Stop trying to be special</p>
+      <h1>Legal Notice</h1>
+    </header>
+
+    <section aria-labelledby="provider-heading">
+      <h2 id="provider-heading">Provider information</h2>
+      <p>
+        Information pursuant to section 5 of the German Digital Services Act
+        (Digitale-Dienste-Gesetz, DDG).
+      </p>
+      <!-- Replace all sample contact details before publication. -->
+      <address>
+        SabWare Apps<br>
+        Sabine Buttgereit<br>
+        c/o flexdienst - #10919<br>
+        Kurt-Schumacher-Strasse 74<br>
+        67663 Kaiserslautern<br>
+        Germany
+      </address>
+      <p>
+        Email: <a href="mailto:sabware.apps@gmail.com">sabware.apps@gmail.com</a><br>
+      </p>
+    </section>
+
+    <section aria-labelledby="app-heading">
+      <h2 id="app-heading">App covered by this notice</h2>
+      <p>
+        Stop trying to be special<br>
+      </p>
+      <p>
+        This legal notice also applies to the associated legal-information pages
+        provided for this app.
+      </p>
+    </section>
+
+    <section aria-labelledby="disputes-heading">
+      <h2 id="disputes-heading">Consumer dispute resolution</h2>
+      <!-- Confirm that this statement applies to the actual provider. -->
+      <p>
+        We are neither willing nor obliged to participate in dispute resolution
+        proceedings before a consumer arbitration board.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
+
