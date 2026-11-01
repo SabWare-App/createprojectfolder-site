@@ -78,6 +78,51 @@
       outline-offset: 4px;
     }
   </style>
+
+<style>
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --background: #fff9f3;
+    --surface: #ffffff;
+    --text: #263b40;
+    --muted: #4b6065;
+    --accent: #a51e32;
+    --outline: #dfd6ce;
+  }
+
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --background: #102a30;
+    --surface: #19383f;
+    --text: #f4f7f6;
+    --muted: #c5d5d6;
+    --accent: #ffb5bd;
+    --outline: #476269;
+  }
+</style>
+
+<script>
+(() => {
+  const theme = new URLSearchParams(window.location.search).get("theme");
+  if (theme !== "light" && theme !== "dark") return;
+
+  document.documentElement.dataset.theme = theme;
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("a[href]").forEach((link) => {
+      const url = new URL(link.getAttribute("href"), window.location.href);
+      if (
+        url.origin === window.location.origin &&
+        /\/(legal-notice|privacy-policy|terms-of-use)\.html$/.test(url.pathname)
+      ) {
+        url.searchParams.set("theme", theme);
+        link.href = url.href;
+      }
+    });
+  });
+})();
+</script>
+  
 </head>
 
 <body>
