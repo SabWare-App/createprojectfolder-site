@@ -105,16 +105,12 @@
 (() => {
   const theme = new URLSearchParams(window.location.search).get("theme");
   if (theme !== "light" && theme !== "dark") return;
-
   document.documentElement.dataset.theme = theme;
-
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("a[href]").forEach((link) => {
       const url = new URL(link.getAttribute("href"), window.location.href);
-      if (
-        url.origin === window.location.origin &&
-        /\/(legal-notice|privacy-policy|terms-of-use)\.html$/.test(url.pathname)
-      ) {
+      if (url.origin === window.location.origin &&
+          /\/(legal-notice|privacy-policy|terms-of-use)(-de)?\.html$/.test(url.pathname)) {
         url.searchParams.set("theme", theme);
         link.href = url.href;
       }
@@ -127,6 +123,7 @@
 
 <body>
   <main>
+<nav aria-label="Language / Sprache" style="text-align:right; margin-bottom:20px"><span lang="en" aria-current="page">English</span> · <a href="privacy-policy-de.html" lang="de" hreflang="de">Deutsch</a></nav>
     <header>
       <p class="app-name">Stop trying to be special</p>
       <h1>Privacy Policy</h1>
@@ -518,7 +515,7 @@ used to show whether that export matches the current entry.</li>
 
     <p>
       Contact us at
-      <a href="mailto:support@example.com">support@example.com</a>
+      <a href="mailto:sabware.apps@gmail.com">sabware.apps@gmail.com</a>
       to exercise your rights regarding processing for which we are
       responsible. We do not have remote access to your local
       reflections. We will explain what we can do and may request

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Datenschutzerklärung | Stop trying to be special</title>
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #fff9f3;
+      --surface: #ffffff;
+      --text: #263b40;
+      --muted: #4b6065;
+      --accent: #a51e32;
+      --outline: #dfd6ce;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #102a30;
+        --surface: #19383f;
+        --text: #f4f7f6;
+        --muted: #c5d5d6;
+        --accent: #ffb5bd;
+        --outline: #476269;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: clamp(20px, 5vw, 44px);
+      background: var(--surface);
+      border: 1px solid var(--outline);
+      border-radius: 24px;
+      overflow-wrap: anywhere;
+    }
+
+    .app-name {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    h1 {
+      margin: 8px 0 24px;
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+    }
+  </style>
+
+<style>
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --background: #fff9f3;
+    --surface: #ffffff;
+    --text: #263b40;
+    --muted: #4b6065;
+    --accent: #a51e32;
+    --outline: #dfd6ce;
+  }
+
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --background: #102a30;
+    --surface: #19383f;
+    --text: #f4f7f6;
+    --muted: #c5d5d6;
+    --accent: #ffb5bd;
+    --outline: #476269;
+  }
+</style>
+
+<script>
+(() => {
+  const theme = new URLSearchParams(window.location.search).get("theme");
+  if (theme !== "light" && theme !== "dark") return;
+  document.documentElement.dataset.theme = theme;
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("a[href]").forEach((link) => {
+      const url = new URL(link.getAttribute("href"), window.location.href);
+      if (url.origin === window.location.origin &&
+          /\/(legal-notice|privacy-policy|terms-of-use)(-de)?\.html$/.test(url.pathname)) {
+        url.searchParams.set("theme", theme);
+        link.href = url.href;
+      }
+    });
+  });
+})();
+</script>
+  
+</head>
+
+<body>
+  <main>
+<nav aria-label="Language / Sprache" style="text-align:right; margin-bottom:20px"><a href="privacy-policy.html" lang="en" hreflang="en">English</a> · <span lang="de" aria-current="page">Deutsch</span></nav>
+    <header>
+      <p class="app-name">Stop trying to be special</p>
+      <h1>Datenschutzerklärung</h1>
+    </header>
+
+    <p>Stand des englischen Ausgangstextes: 1. November 2026 · Deutsche Übersetzung: 22. November 2026</p>
+
+    <h2>1. Wer ist verantwortlich?</h2>
+
+    <p>Anbieter und Ansprechpartner für Datenschutzfragen zu Stop trying to be special ist:</p>
+
+   <p>SabWare Apps<br>Sabine Buttgereit<br>c/o flexdienst - #10919<br>Kurt-Schumacher-Strasse 74<br>67663 Kaiserslautern<br>Deutschland<br>E-Mail: <a href="mailto:sabware.apps@gmail.com">sabware.apps@gmail.com</a></p>
+    
+    <p>Diese Erklärung erläutert die lokale Speicherung in der App, Android-Sicherungen, den Besuch unserer Seiten mit rechtlichen Informationen und die Kommunikation mit uns.</p>
+
+    <h2>2. Ein kurzer Überblick</h2>
+
+    <p>Du kannst die Checkliste ohne Benutzerkonto nutzen. Deine Reflexionen werden im privaten Speicher der App auf deinem Gerät gespeichert. Wir betreiben keinen Server, der deine Reflexionen empfängt. Die App bietet keine kontobasierte Synchronisierung.</p>
+
+    <p>Die App enthält keine Werbung und keinen eingebundenen Analysedienst eines Drittanbieters. Wir verkaufen deine Reflexionsdaten nicht und verwenden sie nicht für Werbung.</p>
+
+    <p>Lokale Speicherung bedeutet allerdings nicht zwangsläufig, dass die Daten immer auf demselben Gerät bleiben. Android-Sicherungen und Geräteübertragungen können App-Daten einschließen, wie in Abschnitt 4 erläutert. Auch beim Öffnen externer Seiten oder bei der Kontaktaufnahme mit uns finden gesonderte Verarbeitungen statt.</p>
+
+    <h2>3. Von der App gespeicherte Daten</h2>
+
+    <p>Die App speichert die Informationen, die für deine Reflexionen erforderlich sind:</p>
+
+    <ul>
+      <li>Die von dir ausgewählten Punkte der Checkliste.</li>
+      <li>Den Tag oder Zeitraum, dem ein Eintrag zugeordnet ist.</li>
+      <li>Eine gegebenenfalls von dir eingegebene Notiz.</li>
+      <li>Ob ein Eintrag ein Entwurf oder abgeschlossen ist.</li>
+      <li>Interne Kennungen der Einträge sowie Zeitpunkte ihrer Erstellung und Änderung.</li>
+      <li>Deine bevorzugte Darstellung und die Information, welche Einführungen du bereits angesehen hast.</li>
+      <li>Die von dir akzeptierte Version der Nutzungsbedingungen und den Zeitpunkt deiner Zustimmung.</li>
+      <li>Den Zeitpunkt des zuletzt vermerkten Textexports eines Eintrags und einen digitalen Fingerabdruck seines exportierten Inhalts. Damit wird angezeigt, ob der Export dem aktuellen Eintrag entspricht.</li>
+    </ul>
+
+    <p>Diese Speicherung ermöglicht es dir, Einträge erneut zu öffnen, zu bearbeiten und zu löschen sowie deine Einstellungen beizubehalten. Dafür sind weder Name noch E-Mail-Adresse oder eine Kontoregistrierung erforderlich.</p>
+
+    <p>Wir erhalten und prüfen den Inhalt deiner lokal gespeicherten Reflexionen nicht. Optionale Notizen sind für deinen eigenen Gebrauch bestimmt. Bitte vermeide unnötige Angaben über andere Personen.</p>
+
+    <p>Reflexionen können persönliche oder sensible Inhalte enthalten. Schütze den Zugang zu deinem Gerät, insbesondere wenn du es mit anderen teilst.</p>
+
+    <p>Die App speichert deine Zustimmung zu den Nutzungsbedingungen lokal. So erkennt sie, welcher Version du zugestimmt hast, und fragt nicht unnötig erneut danach. Diese Information wird nicht an einen App-Server übermittelt. Rechtsgrundlage ist Artikel 6 Absatz 1 Buchstabe b DSGVO, da dieser Nachweis der Verwaltung der vereinbarten App-Nutzung dient. Er bleibt auf deinem Gerät, bis die App-Daten entfernt werden oder er durch deine Zustimmung zu einer neueren Version ersetzt wird. Android-Sicherungen können diese Information ebenfalls enthalten, wie in Abschnitt 4 beschrieben.</p>
+
+    <h2>4. Android-Sicherungen und Geräteübertragung</h2>
+
+    <p>Die App lässt derzeit die Sicherungsfunktionen des Android-Betriebssystems zu. Abhängig von Gerät, Systemanbieter, Konto und Einstellungen kann Android die Datenbank und Einstellungen der App in eine Cloud-Sicherung aufnehmen oder auf ein anderes Gerät übertragen.</p>
+
+    <p>Auf Geräten mit Googles Sicherungsdienst kann dies eine mit deinem Google-Konto verknüpfte Speicherung umfassen. Andere Hersteller bieten möglicherweise eigene Dienste für Übertragungen oder Sicherungen an.</p>
+
+    <p>Diese Funktionen werden vom Betriebssystem oder dem jeweiligen Plattformanbieter bereitgestellt. Über die App erhalten wir keinen Zugriff auf deine Sicherung. Verfügbarkeit, Zeitpunkt, Aufbewahrung und Wiederherstellung hängen vom jeweiligen Dienst ab. Wir können nicht garantieren, dass eine Sicherung vorhanden ist oder wiederhergestellt werden kann.</p>
+
+    <p>Du kannst die verfügbaren Sicherungseinstellungen auf deinem Gerät prüfen. Das Deaktivieren künftiger Sicherungen löscht nicht zwangsläufig bereits vorhandene Kopien. Informationen zur Verwaltung und Löschung findest du in den Einstellungen und Datenschutzhinweisen des jeweiligen Anbieters.</p>
+
+    <p><a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a></p>
+
+    <h2>5. Speicherdauer und Löschung</h2>
+
+    <p>Lokale Reflexionseinträge bleiben in der App, bis du sie löschst oder die lokalen App-Daten entfernt werden. Beim Löschen eines Eintrags werden dieser sowie seine zugehörigen Auswahlen und Notizen aus der aktiven lokalen Datenbank der App entfernt.</p>
+
+    <p>Du kannst lokale App-Daten auch über die Android-App-Einstellungen entfernen. Eine Deinstallation entfernt normalerweise die lokalen Daten. Für Betriebssystem-Sicherungen, übertragene Kopien und von dir gesondert erstellte Kopien gelten eigene Löschverfahren. Bei einer erneuten Installation können Daten aus einer verfügbaren Systemsicherung wiederhergestellt werden.</p>
+
+    <p>Das Löschen lokaler Daten weist nicht automatisch jeden Sicherungsanbieter an, alle vorhandenen Kopien zu löschen.</p>
+
+    <h2>5a. Textexporte</h2>
+    
+  <p>Du kannst eine Reflexion exportieren oder mehrere Reflexionen für eine gemeinsame Textdatei auswählen. Die Datei enthält für jeden Eintrag den Tag oder Zeitraum, den Abschlussstatus, die ausgewählten Checklistenpunkte mit ihren ursprünglichen Nummern und Texten sowie eine gegebenenfalls vorhandene Notiz. Dateiname und Speicherort wählst du über die Android-Dateiauswahl.</p>
+<p>Während der Vorbereitung und Speicherung legt die App den Exportinhalt sowie die zugehörigen Eintragskennungen und digitalen Inhaltsfingerabdrücke vorübergehend in ihrem privaten Zwischenspeicher ab. Nach Abschluss oder Abbruch entfernt sie diese Kopien normalerweise. Nach einer Unterbrechung verbliebene Kopien können bestehen bleiben, bis die App oder Android sie löscht. Bei der Vorbereitung eines weiteren Exports entfernt die App zurückgebliebene Kopien, die älter als 24 Stunden sind.</p>
+<p>Nach einem erfolgreichen Export speichert die App für jeden enthaltenen Eintrag den Exportzeitpunkt und einen digitalen Inhaltsfingerabdruck lokal. Diese Angaben bleiben beim Eintrag gespeichert, bis er gelöscht oder die lokalen App-Daten entfernt werden. Ein späterer Export kann sie ersetzen. Damit unterscheidet die App zwischen einer exportierten aktuellen Fassung und einem seit dem Export geänderten Inhalt. Die Angaben bestätigen nicht, dass die exportierte Datei noch existiert. Android-Sicherungen können diese Datenbankeinträge einschließen, wie in Abschnitt 4 beschrieben.</p>
+<p>Du löst den Export selbst aus. Soweit die DSGVO auf diese Verarbeitung in unserer Verantwortung anwendbar ist, ist Artikel 6 Absatz 1 Buchstabe b die Rechtsgrundlage: die Bereitstellung der von dir angeforderten Exportfunktion und ihrer Statusinformationen. Weder der Export noch der Exportstatus werden an einen von uns betriebenen App-Server gesendet.</p>
+<p>Wenn du einen Cloud-Speicheranbieter auswählst, kann dieser den exportierten Inhalt nach seinen eigenen Bedingungen und Datenschutzhinweisen empfangen und verarbeiten. Die erzeugte Datei liegt außerhalb des privaten App-Speichers. Personen mit Zugriff auf die Datei können möglicherweise deine Auswahlen und Notizen lesen. Verwalte Zugriff und Löschung im gewählten Speicherdienst. Das Löschen von Einträgen oder die Deinstallation der App löscht exportierte Dateien nicht automatisch.</p>
+<p>Textexporte sind lesbare Kopien und können derzeit nicht wieder in die App importiert werden.</p>
+
+    <h2>5b. Update-Hinweise über Google Play</h2>
+<p>Die App prüft über Google Play, ob für dein Gerät und Konto eine neuere Version verfügbar ist. Falls ja, kann die App einen Hinweis anzeigen. „Google Play öffnen“ öffnet die Store-Seite der App. Dort kannst du entscheiden, ob du aktualisieren möchtest. „Später“ schließt den Hinweis.</p>
+<p>Nach Angaben von Google verarbeitet die Funktion zur Prüfung verfügbarer Updates Gerätemetadaten, die App-Version und Informationen über installierte Module und Asset-Pakete. Google Play verarbeitet diese Daten nach seinen geltenden Bedingungen und Datenschutzhinweisen. Die App stellt dieser Funktion weder deine Reflexionen noch deine Checklisten-Auswahl oder Notizen zur Verfügung.</p>
+<p>Damit der Hinweis nicht zu häufig erscheint, speichert die App lokal den Versionscode und Zeitpunkt des zuletzt angezeigten Update-Hinweises. Spätere Hinweise ersetzen diese Werte. Beim Löschen lokaler App-Daten werden sie entfernt. Sie können wie oben beschrieben in Android-Sicherungen enthalten sein.</p>
+<p>Weitere Informationen: <a href="https://developer.android.com/guide/playcore/in-app-updates#data-safety">Googles Angaben zu Daten bei App-Updates</a> und <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>.</p>
+
+    <h2>6. Unsere Website mit rechtlichen Informationen</h2>
+
+    <p>Diese Seiten werden über GitHub Pages bereitgestellt. Wenn du eine Seite besuchst, verarbeitet GitHub technische Anfragedaten einschließlich deiner IP-Adresse, um die Seite auszuliefern und den Dienst zu schützen. GitHub protokolliert IP-Adressen zu Sicherheitszwecken.</p>
+
+    <p>Wir nutzen dieses Hosting, um Informationen zur App zuverlässig zugänglich zu machen. Rechtsgrundlage ist Artikel 6 Absatz 1 Buchstabe f DSGVO aufgrund unseres berechtigten Interesses an einer sicheren und zuverlässigen Bereitstellung der Website. Wir ergänzen keine Besucheranalysen, Werbetracker, eingebetteten Medien oder externen Webfonts.</p>
+
+    <p>GitHub legt die Aufbewahrung anhand der Verarbeitungszwecke und geltenden rechtlichen Anforderungen fest. Die Datenschutzerklärung von GitHub erläutert Verarbeitung, Aufbewahrung und internationale Übermittlungen. Siehe auch Abschnitt 10 unten.</p>
+
+    <p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a></p>
+
+    <h2>7. Google Play und Betriebssystemdienste</h2>
+
+    <p>Wenn du die App über Google Play beziehst, verarbeitet Google im Zusammenhang mit Vertrieb, Installation, Updates und Plattformdiensten Informationen nach seinen eigenen Datenschutzhinweisen.</p>
+
+    <p>Wenn Nutzer die entsprechende Weitergabe von Nutzungs- und Diagnosedaten aktiviert haben, kann Google uns über Android vitals technische Qualitätsberichte bereitstellen. Diese können Diagnosedaten zu Abstürzen oder nicht reagierenden Apps sowie Angaben zu App- und Betriebssystemversionen und zum Gerätemodell enthalten. Wir nutzen verfügbare Berichte, um technische Probleme zu erkennen und zu beheben.</p>
+
+    <p>Diese Plattformberichte sind von einem in die App eingebundenen Analyse-SDK zu unterscheiden. Wir nehmen Reflexionstexte oder Notizen nicht absichtlich in Diagnosemeldungen auf.</p>
+
+    <p>Die Einführung enthält auch einen Link zu einem YouTube-Video. YouTube-Inhalte sind nicht in die App eingebettet und werden nicht bereits beim Ansehen der Einführung geladen. Wenn du dem Link folgst, öffnet YouTube oder dein Browser das Video. Google verarbeitet dabei Daten nach seiner Datenschutzerklärung.</p>
+      <a href="https://policies.google.com/privacy">
+        Google Privacy Policy
+      </a>
+    </p>
+
+    <h2>8. Kontaktaufnahme</h2>
+
+    <p>Wenn du uns per E-Mail kontaktierst, verarbeiten wir deine E-Mail-Adresse, den Inhalt deiner Nachricht und die von dir beigefügten Anhänge. Wir verwenden diese Informationen, um deine Anfrage zu beantworten und bei Bedarf technische Probleme zu lösen.</p>
+
+    <p>Bitte sende uns keine vollständigen Reflexionen oder sensiblen personenbezogenen Informationen, sofern dies für deine Anfrage nicht erforderlich ist. Ein technisches Problem lässt sich meist beschreiben, ohne deine Notizen mitzuschicken.</p>
+
+    <p>Wir empfangen und beantworten Nachrichten mit Gmail über ein reguläres Google-Konto. Anbieter für unsere Nutzung dieses Dienstes in Deutschland ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Google verarbeitet E-Mail-Inhalte, Anhänge und zugehörige technische Daten zur Bereitstellung und Absicherung des Dienstes nach seinen Bedingungen und seiner Datenschutzerklärung. Dies ist kein Google-Workspace-Konto.</p>
+
+    <p>Wir verarbeiten Korrespondenz auf Grundlage von Artikel 6 Absatz 1 Buchstabe b DSGVO, soweit dies für Anfragen zu einer vereinbarten Leistung oder vorvertraglichen Maßnahmen erforderlich ist. Bei sonstigen Anfragen stützen wir uns auf Artikel 6 Absatz 1 Buchstabe f DSGVO und unser berechtigtes Interesse an der Beantwortung von Nachrichten. Gesetzliche Aufbewahrungspflichten beruhen auf Artikel 6 Absatz 1 Buchstabe c DSGVO.</p>
+
+    <p><a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>. Informationen zur internationalen Verarbeitung findest du in Abschnitt 10.</p>
+
+    <p>Wir bewahren Korrespondenz so lange auf, wie es für die Bearbeitung der Anfrage und damit zusammenhängender Rückfragen angemessen erforderlich ist. Eine längere Aufbewahrung ist möglich, wenn eine konkrete gesetzliche Pflicht dies verlangt oder sie zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist. Entfallen diese Gründe, löschen wir die Informationen.</p>
+
+    <h2>9. Rechtsgrundlagen</h2>
+
+    <p>Soweit die DSGVO auf Verarbeitungen in unserer Verantwortung anwendbar ist, sind folgende Grundlagen relevant:</p>
+
+    <ul>
+      <li>Artikel 6 Absatz 1 Buchstabe b: Verarbeitung, die zur Erbringung einer vereinbarten Leistung oder zur Beantwortung einer Anfrage vor Abschluss einer Vereinbarung erforderlich ist.</li>
+      <li>Artikel 6 Absatz 1 Buchstabe f: unsere berechtigten Interessen an der Beantwortung allgemeiner Anfragen, der Aufrechterhaltung der App-Qualität, der sicheren Bereitstellung unserer Informationsseiten und dem Schutz vor Missbrauch. Dabei berücksichtigen wir die Auswirkungen auf deine Rechte.</li>
+      <li>Artikel 6 Absatz 1 Buchstabe c: Verarbeitung zur Erfüllung geltender rechtlicher Verpflichtungen.</li>
+    </ul>
+
+    <p>Diese Grundlagen erlauben für sich genommen keine Verarbeitung besonderer Kategorien personenbezogener Daten. Soweit eine solche Verarbeitung in unserer Verantwortung liegt, gelten zusätzliche Voraussetzungen.</p>
+
+    <p>Die App speichert Informationen auf deinem Gerät oder greift darauf zu, um von dir angeforderte Funktionen bereitzustellen, etwa einen Eintrag zu speichern oder eine Darstellungseinstellung beizubehalten. In Deutschland regelt § 25 Absatz 2 Nummer 2 TDDDG die unbedingt erforderliche Speicherung oder den Zugriff für einen vom Nutzer ausdrücklich gewünschten Dienst.</p>
+
+    <h2>10. Empfänger und internationale Verarbeitung</h2>
+
+    <p>Deine Reflexionsinhalte werden nicht routinemäßig an uns oder ein App-Backend übertragen. Mögliche Empfänger in den oben beschriebenen Fällen sind dein gewählter Anbieter für Sicherungen oder Geräteübertragungen, GitHub beim Besuch der rechtlichen Informationsseiten sowie der E-Mail-Anbieter für die Korrespondenz.</p>
+
+    <p>GitHub nennt GitHub B.V. in den Niederlanden und GitHub, Inc. in den USA als Unternehmen, die personenbezogene Daten nach seiner Datenschutzerklärung verarbeiten. Google Ireland Limited stellt den von uns in Deutschland verwendeten Gmail-Dienst bereit. Diese Dienste können eine Verarbeitung außerhalb des Europäischen Wirtschaftsraums einschließlich der USA umfassen.</p>
+
+    <p>GitHub und Google erklären, am EU–US Data Privacy Framework teilzunehmen. Für Übermittlungen, die von einer gültigen Zertifizierung erfasst sind, bietet der entsprechende Angemessenheitsbeschluss der Europäischen Kommission einen Übermittlungsmechanismus. Die Anbieter beschreiben außerdem die Verwendung von Standardvertragsklauseln der Europäischen Kommission, soweit diese für nicht von einem Angemessenheitsbeschluss erfasste Übermittlungen erforderlich sind.</p>
+
+    <p>Die Anbieter erläutern ihre jeweiligen Schutzmaßnahmen und Kontaktmöglichkeiten in der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a> und in <a href="https://policies.google.com/privacy/frameworks">Googles Informationen zu Datenübermittlungsmechanismen</a>. Google erklärt dort auch, wie du eine Kopie seiner Standardvertragsklauseln anfordern kannst. Die Datenschutzerklärung von GitHub verlinkt die Klauseln, auf die GitHub sich stützt.</p>
+
+    <h2>11. Deine Rechte</h2>
+
+    <p>Soweit die DSGVO gilt und ihre Voraussetzungen erfüllt sind, kannst du Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit verlangen. Gegen eine auf berechtigte Interessen gestützte Verarbeitung kannst du aus Gründen, die sich aus deiner besonderen Situation ergeben, Widerspruch einlegen.</p>
+
+    <p>Beruht eine Verarbeitung auf Einwilligung, kannst du diese mit Wirkung für die Zukunft widerrufen. Die Rechtmäßigkeit der vorherigen Verarbeitung bleibt davon unberührt.</p>
+
+    <p>Du kannst dich bei einer zuständigen Datenschutzaufsichtsbehörde beschweren, insbesondere in dem EU-Mitgliedstaat, in dem du wohnst oder arbeitest oder in dem du einen Verstoß vermutest.</p>
+
+    <p>Um deine Rechte zu einer Verarbeitung in unserer Verantwortung auszuüben, kontaktiere uns unter <a href="mailto:sabware.apps@gmail.com">sabware.apps@gmail.com</a>. Wir haben keinen Fernzugriff auf deine lokalen Reflexionen. Wir erklären dir, was wir tun können, und fragen gegebenenfalls nur die zusätzlich notwendigen Informationen ab, um die betreffende Verarbeitung zu bestimmen.</p>
+
+    <p>Für Verarbeitungen in eigener Verantwortung von Google, GitHub oder einem anderen Plattformanbieter kannst du dich auch direkt an diesen Anbieter wenden.</p>
+
+    <p>Wir verwenden deine Reflexionen nicht für automatisierte Entscheidungen, die dir gegenüber rechtliche oder ähnlich erhebliche Wirkungen haben.</p>
+
+    <h2>12. Änderungen dieser Erklärung</h2>
+
+    <p>Wir aktualisieren diese Erklärung, wenn sich die App oder relevante Verarbeitungen ändern. Das Datum oben kennzeichnet den jeweiligen Stand. Falls erforderlich, informieren wir dich zusätzlich innerhalb der App.</p>
+  </main>
+</body>
+</html>

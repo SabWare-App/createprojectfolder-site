@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Nutzungsbedingungen | Stop trying to be special</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #fff9f3;
+      --surface: #ffffff;
+      --text: #263b40;
+      --muted: #4b6065;
+      --accent: #a51e32;
+      --outline: #dfd6ce;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #102a30;
+        --surface: #19383f;
+        --text: #f4f7f6;
+        --muted: #c5d5d6;
+        --accent: #ffb5bd;
+        --outline: #476269;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: clamp(20px, 5vw, 44px);
+      background: var(--surface);
+      border: 1px solid var(--outline);
+      border-radius: 24px;
+      overflow-wrap: anywhere;
+    }
+    .app-name { margin: 0; color: var(--muted); }
+    h1 { margin: 8px 0 24px; font-size: 2rem; line-height: 1.2; }
+    h2 { margin-top: 28px; font-size: 1.2rem; line-height: 1.4; }
+    address { font-style: normal; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .application-id { font-family: monospace; }
+  </style>
+
+  <style>
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --background: #fff9f3;
+    --surface: #ffffff;
+    --text: #263b40;
+    --muted: #4b6065;
+    --accent: #a51e32;
+    --outline: #dfd6ce;
+  }
+
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --background: #102a30;
+    --surface: #19383f;
+    --text: #f4f7f6;
+    --muted: #c5d5d6;
+    --accent: #ffb5bd;
+    --outline: #476269;
+  }
+</style>
+
+<script>
+(() => {
+  const theme = new URLSearchParams(window.location.search).get("theme");
+  if (theme !== "light" && theme !== "dark") return;
+  document.documentElement.dataset.theme = theme;
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("a[href]").forEach((link) => {
+      const url = new URL(link.getAttribute("href"), window.location.href);
+      if (url.origin === window.location.origin &&
+          /\/(legal-notice|privacy-policy|terms-of-use)(-de)?\.html$/.test(url.pathname)) {
+        url.searchParams.set("theme", theme);
+        link.href = url.href;
+      }
+    });
+  });
+})();
+</script>
+  
+</head>
+<body>
+  <main>
+<nav aria-label="Language / Sprache" style="text-align:right; margin-bottom:20px"><a href="terms-of-use.html" lang="en" hreflang="en">English</a> · <span lang="de" aria-current="page">Deutsch</span></nav>
+    <header>
+      <p class="app-name">Stop trying to be special</p>
+      <h1>Nutzungsbedingungen</h1>
+    </header>
+
+<p>Stand des englischen Ausgangstextes: 1. November 2026 · Deutsche Übersetzung: 22. November 2026</p>
+
+<h2>1. Anbieter und Geltungsbereich</h2>
+
+<p>Diese Bedingungen gelten für Stop trying to be special, angeboten von:</p>
+
+<p>SabWare Apps<br>Sabine Buttgereit<br>c/o flexdienst - #10919<br>Kurt-Schumacher-Strasse 74<br>67663 Kaiserslautern<br>Deutschland<br>E-Mail: <a href="mailto:sabware.apps@gmail.com">sabware.apps@gmail.com</a></p>
+
+<p>Sie gelten, soweit sie zwischen dir und dem Anbieter wirksam vereinbart wurden. Zwingende gesetzliche Rechte bleiben unberührt.</p>
+
+<p>Die App wird derzeit ohne Kaufpreis, Abonnement oder In-App-Käufe bereitgestellt.</p>
+
+<h2>2. Zweck der App</h2>
+
+<p>Die App bietet eine Checkliste zur persönlichen Reflexion. Du kannst Punkte auswählen, die du bei dir erkennst, Einträge einem Tag oder Zeitraum zuordnen, eine optionale Notiz ergänzen und frühere Einträge erneut ansehen.</p>
+
+<p>Sie soll die persönliche Selbstbeobachtung unterstützen. Sie bietet keine Diagnosen, Behandlungen, professionelle Beratung zur psychischen Gesundheit oder Notfallhilfe. Sie ersetzt keine angemessene professionelle Betreuung.</p>
+
+<p>Erfahrungen sind unterschiedlich. Wir versprechen kein bestimmtes psychologisches, spirituelles oder entspannungsbezogenes Ergebnis. Es gibt keine erforderliche Anzahl ausgewählter Punkte und keinen Maßstab für deinen persönlichen Wert.</p>
+
+<h2>3. Nutzungsrecht</h2>
+
+<p>Du erhältst ein nicht ausschließliches Recht, die App innerhalb dieser Bedingungen und des geltenden Rechts für deine persönlichen Zwecke zu nutzen.</p>
+
+<p>Die App, ihr Design, ihre Illustrationen und die Inhalte der Checkliste können durch Urheberrechte und andere Rechte geschützt sein. Soweit es nicht gesetzlich erlaubt oder vom jeweiligen Rechteinhaber genehmigt ist, darfst du geschützte App-Inhalte nicht als eigenes Produkt vervielfältigen oder verbreiten und die vollständige Checkliste nicht veröffentlichen.</p>
+
+<p>Gesetzlich gewährte Befugnisse einschließlich zwingender Ausnahmen bleiben unberührt. Für Open-Source-Komponenten gelten weiterhin ihre jeweiligen Lizenzbedingungen.</p>
+
+<p>Die Rechte an deinen Notizen und anderen von dir erstellten eigenen Inhalten bleiben bei dir. Diese Bedingungen räumen uns kein Recht ein, deine Reflexionen zu veröffentlichen.</p>
+
+<h2>4. Einträge und Gerätespeicher</h2>
+
+<p>Du entscheidest, welche Punkte du auswählst und was du schreibst. Die App speichert Einträge lokal und ermöglicht es dir, sie erneut zu öffnen, zu bearbeiten und zu löschen. Ein abgeschlossener Eintrag kann später weiterhin bearbeitet werden.</p>
+
+<p>Die App verwendet die Datums- und Zeiteinstellungen des Geräts. Jeder Tag kann nur einem Eintrag zugeordnet sein, auch bei Entwürfen. Sich überschneidende Zeiträume und Daten in der Zukunft werden nicht unterstützt.</p>
+
+<p>Automatisches Speichern setzt voraus, dass der lokale Speichervorgang erfolgreich abgeschlossen wird. Achte auf Speicherstatus- oder Konfliktmeldungen, bevor du einen Eintrag verlässt.</p>
+
+<p>Abhängig von System und Einstellungen können Android-Sicherungen und Dienste zur Geräteübertragung verfügbar sein. Dabei handelt es sich nicht um einen eigenen, von uns betriebenen Sicherungsdienst. Wir können deine Einträge nicht von einem App-Server wiederherstellen, da wir keinen solchen Server betreiben.</p>
+
+<p>Der Verlust eines Geräts, das Löschen lokaler App-Daten oder eine fehlgeschlagene Sicherung können zum Verlust von Einträgen führen. Überlege bitte, wie du dir wichtige Informationen erhalten möchtest. Diese Hinweise beschränken weder gesetzliche Rechte noch unsere Haftung nach geltendem Recht.</p>
+
+<h2>5. Verantwortungsvolle Nutzung</h2>
+
+<p>Nutze die App rechtmäßig und respektiere die Rechte und Privatsphäre anderer. Speichere damit keine Informationen über andere Personen ohne angemessenen Grund und gegebenenfalls gesetzlich erforderliche Berechtigung.</p>
+
+<p>Schütze dein Gerät in angemessenem Umfang vor unbefugtem Zugriff. Wenn du dein Gerät teilst, können andere Personen mit Zugriff darauf möglicherweise deine Reflexionen ansehen.</p>
+
+<h2>6. Updates und Änderungen</h2>
+
+<p>Wir können Updates bereitstellen, um Probleme zu beheben oder die App zu verbessern. Funktionen und Kompatibilität können sich im Laufe der Zeit weiterentwickeln. Gesetzliche Pflichten zur Vertragsmäßigkeit, Sicherheit oder Bereitstellung von Updates bleiben unberührt.</p>
+
+<p>Änderungen dieser Bedingungen werden nur nach Maßgabe des geltenden Rechts wirksam. Ist deine Zustimmung erforderlich, holen wir sie ein. Ein geändertes Datum oder die bloße weitere Nutzung ersetzen keine gesetzlich erforderliche Zustimmung.</p>
+
+<h2>7. Externe Dienste</h2>
+
+<p>Die App kann Seiten mit rechtlichen Informationen oder andere eindeutig gekennzeichnete externe Angebote in deinem Browser öffnen. Deren Betreiber sind für ihre eigenen Dienste und Datenverarbeitungen verantwortlich. Für die Nutzung von Android-Sicherungen und Google Play gelten außerdem die jeweiligen Plattformregelungen.</p>
+
+<p>Dieser Abschnitt schließt eine Verantwortung, die uns nach geltendem Recht trifft, nicht aus.</p>
+
+<h2>8. Haftung und gesetzliche Rechte</h2>
+
+<p>Unsere Haftung richtet sich nach geltendem Recht. Diese Bedingungen schließen weder zwingende Verbraucherrechte noch gesetzliche Mängelrechte oder eine andere Haftung aus oder beschränken sie, soweit dies rechtlich nicht zulässig ist.</p>
+
+<h2>9. Beendigung der Nutzung</h2>
+
+<p>Du kannst die Nutzung jederzeit beenden und die App deinstallieren. Informationen zur lokalen Löschung und zu Systemsicherungen findest du in der <a href="privacy-policy-de.html">Datenschutzerklärung</a>.</p>
+
+<h2>10. Anwendbares Recht und Streitigkeiten</h2>
+
+<p>Es gilt deutsches Recht. Wenn du Verbraucher bist, entzieht dir diese Rechtswahl nicht den Schutz durch zwingende Vorschriften des Rechts, das ohne diese Rechtswahl gelten würde.</p>
+
+<p>Welche Gerichte zuständig sind, richtet sich nach den geltenden gesetzlichen Regeln. Diese Bedingungen verpflichten Verbraucher nicht, Ansprüche ausschließlich vor einem deutschen Gericht geltend zu machen.</p>
+
+<p>Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+<h2>11. Kontakt</h2>
+
+<p>Bei Fragen zur App oder zu diesen Bedingungen erreichst du uns unter <a href="mailto:sabware.apps@gmail.com">sabware.apps@gmail.com</a>.</p>
+  </main>
+</body>
+</html>
+

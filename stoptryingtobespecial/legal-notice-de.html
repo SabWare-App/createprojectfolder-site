@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Impressum | Stop trying to be special</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #fff9f3;
+      --surface: #ffffff;
+      --text: #263b40;
+      --muted: #4b6065;
+      --accent: #a51e32;
+      --outline: #dfd6ce;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #102a30;
+        --surface: #19383f;
+        --text: #f4f7f6;
+        --muted: #c5d5d6;
+        --accent: #ffb5bd;
+        --outline: #476269;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: clamp(20px, 5vw, 44px);
+      background: var(--surface);
+      border: 1px solid var(--outline);
+      border-radius: 24px;
+      overflow-wrap: anywhere;
+    }
+    .app-name { margin: 0; color: var(--muted); }
+    h1 { margin: 8px 0 24px; font-size: 2rem; line-height: 1.2; }
+    h2 { margin-top: 28px; font-size: 1.2rem; line-height: 1.4; }
+    address { font-style: normal; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .application-id { font-family: monospace; }
+  </style>
+
+<style>
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --background: #fff9f3;
+    --surface: #ffffff;
+    --text: #263b40;
+    --muted: #4b6065;
+    --accent: #a51e32;
+    --outline: #dfd6ce;
+  }
+
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --background: #102a30;
+    --surface: #19383f;
+    --text: #f4f7f6;
+    --muted: #c5d5d6;
+    --accent: #ffb5bd;
+    --outline: #476269;
+  }
+</style>
+  
+<script>
+(() => {
+  const theme = new URLSearchParams(window.location.search).get("theme");
+  if (theme !== "light" && theme !== "dark") return;
+  document.documentElement.dataset.theme = theme;
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("a[href]").forEach((link) => {
+      const url = new URL(link.getAttribute("href"), window.location.href);
+      if (url.origin === window.location.origin &&
+          /\/(legal-notice|privacy-policy|terms-of-use)(-de)?\.html$/.test(url.pathname)) {
+        url.searchParams.set("theme", theme);
+        link.href = url.href;
+      }
+    });
+  });
+})();
+</script>
+  
+</head>
+<body>
+  <main>
+<nav aria-label="Language / Sprache" style="text-align:right; margin-bottom:20px"><a href="legal-notice.html" lang="en" hreflang="en">English</a> · <span lang="de" aria-current="page">Deutsch</span></nav>
+    <header>
+      <p class="app-name">Stop trying to be special</p>
+      <h1>Impressum</h1>
+    </header>
+
+    <section aria-labelledby="provider-heading">
+      <h2 id="provider-heading">Angaben zum Anbieter</h2>
+      <p>Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG).</p>
+      <address>SabWare Apps<br>Sabine Buttgereit<br>c/o flexdienst - #10919<br>Kurt-Schumacher-Strasse 74<br>67663 Kaiserslautern<br>Deutschland</address>
+      <p>E-Mail: <a href="mailto:sabware.apps@gmail.com">sabware.apps@gmail.com</a></p>
+    </section>
+
+    <section aria-labelledby="app-heading">
+      <h2 id="app-heading">App, für die dieses Impressum gilt</h2>
+      <p>Stop trying to be special</p>
+      <p>Dieses Impressum gilt auch für die zugehörigen Seiten mit rechtlichen Informationen, die für diese App bereitgestellt werden.</p>
+    </section>
+
+    <section aria-labelledby="disputes-heading">
+      <h2 id="disputes-heading">Verbraucherstreitbeilegung</h2>
+      <p>Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    </section>
+  </main>
+</body>
+</html>
+

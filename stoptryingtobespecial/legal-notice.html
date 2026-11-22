@@ -78,16 +78,12 @@
 (() => {
   const theme = new URLSearchParams(window.location.search).get("theme");
   if (theme !== "light" && theme !== "dark") return;
-
   document.documentElement.dataset.theme = theme;
-
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("a[href]").forEach((link) => {
       const url = new URL(link.getAttribute("href"), window.location.href);
-      if (
-        url.origin === window.location.origin &&
-        /\/(legal-notice|privacy-policy|terms-of-use)\.html$/.test(url.pathname)
-      ) {
+      if (url.origin === window.location.origin &&
+          /\/(legal-notice|privacy-policy|terms-of-use)(-de)?\.html$/.test(url.pathname)) {
         url.searchParams.set("theme", theme);
         link.href = url.href;
       }
@@ -99,6 +95,7 @@
 </head>
 <body>
   <main>
+<nav aria-label="Language / Sprache" style="text-align:right; margin-bottom:20px"><span lang="en" aria-current="page">English</span> · <a href="legal-notice-de.html" lang="de" hreflang="de">Deutsch</a></nav>
     <header>
       <p class="app-name">Stop trying to be special</p>
       <h1>Legal Notice</h1>
@@ -110,7 +107,6 @@
         Information pursuant to section 5 of the German Digital Services Act
         (Digitale-Dienste-Gesetz, DDG).
       </p>
-      <!-- Replace all sample contact details before publication. -->
       <address>
         SabWare Apps<br>
         Sabine Buttgereit<br>
@@ -137,7 +133,6 @@
 
     <section aria-labelledby="disputes-heading">
       <h2 id="disputes-heading">Consumer dispute resolution</h2>
-      <!-- Confirm that this statement applies to the actual provider. -->
       <p>
         We are neither willing nor obliged to participate in dispute resolution
         proceedings before a consumer arbitration board.
